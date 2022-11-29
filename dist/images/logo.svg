@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="311" viewBox="0 0 879.45 172.729">
+  <defs>
+    <filter id="Path_1" x="0" y="0" width="152.474" height="172.729" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_4" x="17.044" y="30.544" width="88.024" height="96.418" filterUnits="userSpaceOnUse">
+      <feOffset dy="22" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3" x="16.333" y="5.21" width="150.996" height="146.998" filterUnits="userSpaceOnUse">
+      <feOffset dy="25" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_4" x="25.45" y="111.729" width="73" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur-4"/>
+    </filter>
+    <filter id="PAI_Exchange_" x="161.45" y="5.729" width="718" height="160" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_11" data-name="Group 11" transform="translate(-3139.55 2000.729)">
+    <g id="Group_3" data-name="Group 3" transform="translate(2808 -447)">
+      <g transform="matrix(1, 0, 0, 1, 331.55, -1553.73)" filter="url(#Path_1)">
+        <path id="Path_1-2" data-name="Path 1" d="M-942.546-1378.806c-5.252,43.066-39.492,41.07-42.226,41.07-5.149,1.626-29.317-5.8-36.4-24.494a36.443,36.443,0,0,1-1.548-20.077c6.3-33.962,36.763-36.764,36.763-36.764h0v-9.416h-36.763v-63.761h80.179s49.2,3.684,53.344,53.821-50.137,59.62-50.137,59.62h-3.208Z" transform="translate(1032.45 1498.25)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 331.55, -1553.73)" filter="url(#Path_4)">
+        <path id="Path_4-2" data-name="Path 4" d="M6,0H33.585a6,6,0,0,1,6,6V39a6,6,0,0,1-6,6H6C2.686,45,.607,42.4.607,39.085L.259,5.7A5.537,5.537,0,0,1,6,0Z" transform="translate(31.83 53.25) rotate(-35)" fill="#002871"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 331.55, -1553.73)" filter="url(#Path_3)">
+        <path id="Path_3-2" data-name="Path 3" d="M64.589,0a1.771,1.771,0,0,1-.373.059C84.1,8.406,90.844,23.549,90.844,23.549s-54.76,55.014-60.28,59.095-12.241,1.2-12.241,1.2L0,64.8,63.942.714Z" transform="translate(53.6 5.21) rotate(9)" fill="#4c89f2"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 331.55, -1553.73)" filter="url(#Rectangle_4)">
+        <rect id="Rectangle_4-2" data-name="Rectangle 4" width="55" height="2" transform="translate(34.45 117.73)" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 3139.55, -2000.73)" filter="url(#PAI_Exchange_)">
+      <text id="PAI_Exchange_2" data-name="PAI Exchange " transform="translate(170.45 124.73)" fill="#fff" font-size="108" font-family="Roboto-Black, Roboto" font-weight="800" letter-spacing="0.006em"><tspan x="0" y="0">PAI Exchange </tspan></text>
+    </g>
+  </g>
+</svg>
