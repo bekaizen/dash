@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Paiexchange, pagos al instante, cripto, bitcoin,pai web app.">
+        <meta name="keywords" content="Paiexchange, pagos al instante, cripto, bitcoin,pai web app">
+        <meta name="author" content="Jersson A. Rodriguez, Edwin Alonzo">
+        <title>PAI Exchange</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5 md:py-0">
+        
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+
+
+        <script>
+            if (localStorage.getItem("Sesion") !== 'true') {
+                window.location.href = "login.html";
+            }
+            else if (localStorage.getItem('PinAcceso') !== null) {
+                window.location.href = "Pin.html";
+            }
+            else if (localStorage.getItem('Huella') !== null) {
+                document.addEventListener("deviceready", MostrarHuella, false);
+                function MostrarHuella() {
+                    Fingerprint.show({
+                        description: "Desbloqueo con huella dactilar",
+                        title: "PAI inicio de sesión"
+                    }, successCallback, errorCallback);
+                    $('#bienvnd').show();
+                    $('#loadergif').attr('style', 'display:none');
+                }
+
+                function successCallback() {
+                    window.location.href = "panel.html";
+                }
+                function errorCallback(error) {
+                    MostrarHuella();
+                }
+                MostrarHuella();
+            }
+            else {
+                window.location.href = "inicio.html";
+            }
+        </script>
+    </body>
+</html>

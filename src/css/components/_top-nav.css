@@ -63,12 +63,12 @@
             }
             .top-menu {
                 height: 55px;
-                @apply flex items-center px-5 mr-1 text-slate-600 relative rounded-xl;
+                @apply flex items-center px-5 mr-1 text-sky-600 relative rounded-xl;
                 @include media-breakpoint-down(xl) {
                     @apply rounded-full;
                 }
                 &.top-menu--active {
-                    @apply bg-slate-100 text-primary dark:bg-darkmode-700;
+                    @apply bg-sky-100 text-primary dark:bg-darkmode-700;
                     &:before {
                         content: "";
                         @apply block inset-0 rounded-xl absolute border-b-[3px] border-solid border-black/[0.08] dark:bg-darkmode-700;
@@ -100,15 +100,15 @@
                     .top-menu__title {
                         @apply font-medium dark:text-white;
                         @include media-breakpoint-down(xl) {
-                            @apply text-slate-800;
+                            @apply text-sky-800;
                         }
                     }
                 }
                 .top-menu__icon {
-                    @apply z-10 dark:text-slate-400;
+                    @apply z-10 dark:text-sky-400;
                 }
                 .top-menu__title {
-                    @apply z-10 dark:text-slate-400;
+                    @apply z-10 dark:text-sky-400;
                 }
                 .top-menu__title {
                     @apply ml-3 flex items-center whitespace-nowrap;
@@ -122,7 +122,7 @@
             }
             ul {
                 box-shadow: 0px 3px 20px #00000014;
-                @apply bg-slate-100 hidden w-56 absolute rounded-md z-20 px-0 mt-1 before:block before:absolute before:w-full before:h-full before:bg-white/[0.04] before:inset-0 before:rounded-md before:z-[-1] dark:before:bg-black/10;
+                @apply bg-sky-100 hidden w-56 absolute rounded-md z-20 px-0 mt-1 before:block before:absolute before:w-full before:h-full before:bg-white/[0.04] before:inset-0 before:rounded-md before:z-[-1] dark:before:bg-black/10;
                 &:after {
                     content: "";
                     @apply w-full h-1 absolute top-0 left-0 -mt-1 cursor-pointer;
@@ -144,12 +144,12 @@
                 }
                 ul {
                     left: 100%;
-                    @apply bg-slate-100 hidden rounded-md mt-0 ml-0 top-0 before:block before:absolute before:w-full before:h-full before:bg-white/[0.04] before:inset-0 before:rounded-md before:z-[-1] dark:before:bg-black/10;
+                    @apply bg-sky-100 hidden rounded-md mt-0 ml-0 top-0 before:block before:absolute before:w-full before:h-full before:bg-white/[0.04] before:inset-0 before:rounded-md before:z-[-1] dark:before:bg-black/10;
                 }
             }
         }
         > li:hover > .top-menu:not(.top-menu--active) {
-            @apply bg-slate-100 dark:bg-transparent;
+            @apply bg-sky-100 dark:bg-transparent;
             &:before {
                 content: "";
                 @apply block inset-0 rounded-xl absolute z-[-1] border-b-[3px] border-solid border-black/[0.08] dark:bg-darkmode-700;

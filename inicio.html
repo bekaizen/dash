@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Paiexchange, pagos al instante, cripto, bitcoin,pai web app.">
+        <meta name="keywords" content="Paiexchange, pagos al instante, cripto, bitcoin,pai web app">
+        <meta name="author" content="Jersson A. Rodriguez, Edwin Alonzo">
+        <title>PAI Exchange</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5 md:py-0">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="PAI Exchange - Image" class="w-22" src="dist/images/logo.svg">
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-lucide="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-white/[0.08] py-5 hidden"> 
+                <ul>
+                    <li>
+                        <a href="javascript:;.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="home"></i> </div>
+                            <div class="menu__title">
+                                Dashboard 
+                                <!-- <div class="menu__sub-icon transform rotate-180"> <i data-lucide="chevron-down"></i> </div> -->
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="vender.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="bitcoin"></i> </div>
+                            <div class="menu__title"> Vender </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transferir.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="send"></i> </div>
+                            <div class="menu__title"> Transferir </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu-light-file-manager.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="wallet"></i> </div>
+                            <div class="menu__title"> Cartera </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu-light-file-manager.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="users"></i> </div>
+                            <div class="menu__title"> Afiliados </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu-light-file-manager.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="pie-chart"></i> </div>
+                            <div class="menu__title"> Inversiones </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu-light-file-manager.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="image"></i> </div>
+                            <div class="menu__title"> Inversiones NFT </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu-light-file-manager.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="Arrow-left-right"></i> </div>
+                            <div class="menu__title"> Envios </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu-light-chat.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="user"></i> </div>
+                            <div class="menu__title"> Cuenta </div>
+                        </a>
+                    </li>
+    
+                    <li class="menu__devider my-6"></li>
+    
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-lucide="settings"></i> </div>
+                        <div class="menu__title"> Configuracion <i data-lucide="chevron-down" class="menu__sub-icon "></i>  </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="menu-light-crud-data-list.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="shield"></i> </div>
+                                <div class="menu__title"> Verificacion de cuenta </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-light-crud-form.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="lock"></i> </div>
+                                <div class="menu__title"> Validacion 2FA </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-light-crud-form.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="hash"></i> </div>
+                                <div class="menu__title"> Activar codigo PIN </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-light-crud-form.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="alert-triangle"></i> </div>
+                                <div class="menu__title"> Consejos de seguridad </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="help-circle"></i> </div>
+                                <div class="menu__title"> Ayuda </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="life-buoy"></i> </div>
+                                <div class="menu__title"> Soporte </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-light-crud-form.html" class="menu">
+                                <div class="menu__icon"> <i data-lucide="power"></i> </div>
+                                <div class="menu__title"> Cerrar sesion </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>   
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+        <!-- BEGIN: Top Bar -->
+        <div class="top-bar-boxed h-[70px] md:h-[65px] z-[51] border-b border-white/[0.08] -mt-7 md:mt-0 -mx-3 sm:-mx-8 md:-mx-0 px-3 md:border-b-0 relative md:fixed md:inset-x-0 md:top-0 sm:px-8 md:px-10 md:pt-10 md:bg-gradient-to-b md:from-slate-100 md:to-transparent dark:md:from-darkmode-700">
+            <div class="h-full flex items-center">
+                <!-- BEGIN: Logo -->
+                <a href="" class="logo -intro-x hidden md:flex xl:w-[180px] block">
+                    <img alt="PAI Exchange - Image" class="logo__image" src="dist/images/logo.svg">
+                    <!-- <span class="logo__text text-white text-lg ml-3"> Enigma </span>  -->
+                </a>
+                <!-- END: Logo -->
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x h-[45px] mr-auto">
+                    <ol class="breadcrumb breadcrumb-light">
+                        <li class="breadcrumb-item"><a href="#">Application</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown mr-4 sm:mr-6">
+                    <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="bell" class="notification__icon dark:text-slate-500"></i> </div>
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-content">
+                            <div class="notification-content__title">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="PAI Exchange - Image" class="rounded-full" src="dist/images/profile-13.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Arnold Schwarzenegger</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="PAI Exchange - Image" class="rounded-full" src="dist/images/profile-7.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Morgan Freeman</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="PAI Exchange - Image" class="rounded-full" src="dist/images/profile-3.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Kate Winslet</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="PAI Exchange - Image" class="rounded-full" src="dist/images/profile-6.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Russell Crowe</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">06:05 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="PAI Exchange - Image" class="rounded-full" src="dist/images/profile-9.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Robert De Niro</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="PAI Exchange" src="dist/images/profile-10.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-primary/80 before:block before:absolute before:bg-black before:inset-0 before:rounded-md before:z-[-1] text-white">
+                            <li class="p-2">
+                                <div class="font-medium">Arnold Schwarzenegger</div>
+                                <div class="text-xs text-white/60 mt-0.5 dark:text-slate-500">Software Engineer</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <div class="flex overflow-hidden">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
+                            <div class="side-menu__title">
+                                Dashboard 
+                                <!-- <div class="side-menu__sub-icon transform rotate-180"> <i data-lucide="chevron-down"></i> </div> -->
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="vender.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="bitcoin"></i> </div>
+                            <div class="side-menu__title"> Vender </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transferir.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="send"></i> </div>
+                            <div class="side-menu__title"> Transferir </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="wallet"></i> </div>
+                            <div class="side-menu__title"> Cartera </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="users"></i> </div>
+                            <div class="side-menu__title"> Afiliados </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="pie-chart"></i> </div>
+                            <div class="side-menu__title"> Inversiones </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="image"></i> </div>
+                            <div class="side-menu__title"> Inversiones NFT </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="Arrow-left-right"></i> </div>
+                            <div class="side-menu__title"> Envios </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-chat.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="user"></i> </div>
+                            <div class="side-menu__title"> Cuenta </div>
+                        </a>
+                    </li>
+    
+                    <li class="side-menu__devider my-6"></li>
+    
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="settings"></i> </div>
+                            <div class="side-menu__title"> Configuracion <i data-lucide="chevron-down" class="side-menu__sub-icon "></i>  </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-crud-data-list.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="shield"></i> </div>
+                                    <div class="side-menu__title"> Verificacion de cuenta </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="lock"></i> </div>
+                                    <div class="side-menu__title"> Validacion 2FA </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="hash"></i> </div>
+                                    <div class="side-menu__title"> Activar codigo PIN </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="alert-triangle"></i> </div>
+                                    <div class="side-menu__title"> Consejos de seguridad </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="help-circle"></i> </div>
+                                    <div class="side-menu__title"> Ayuda </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="life-buoy"></i> </div>
+                                    <div class="side-menu__title"> Soporte </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="power"></i> </div>
+                                    <div class="side-menu__title"> Cerrar sesion </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+
+
+            
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-span-12 2xl:col-span-9">
+                        <div class="grid grid-cols-12 gap-6">
+                            <!-- BEGIN: General Report -->
+                            <div class="col-span-12 mt-8">
+                                <div class="intro-y flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        Reporte general
+                                    </h2>
+                                    <a href="" class="ml-auto flex items-center text-primary"> <i data-lucide="refresh-ccw" class="w-4 h-4 mr-3"></i> Recargar </a>
+                                </div>
+                                <div class="grid grid-cols-12 gap-6 mt-5">
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <a href="cartera.html">
+                                            <div class="report-box zoom-in">
+                                                <div class="box p-5">
+                                                    <div class="flex">
+                                                        <i data-lucide="bitcoin" class="report-box__icon text-primary"></i> 
+                                                        <div class="ml-auto">
+                                                            <div class="report-box__indicator bg-success tooltip cursor-pointer" title="Conteo"> 3 en total </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-3xl font-medium leading-8 mt-6">4.710</div>
+                                                    <div class="text-base text-slate-500 mt-1">Balance de cuenta</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <a href="inversiones.html">
+                                            <div class="report-box zoom-in">
+                                                <div class="box p-5">
+                                                    <div class="flex">
+                                                        <i data-lucide="bar-chart-2" class="report-box__icon text-pending"></i> 
+                                                        <div class="ml-auto">
+                                                            <div class="report-box__indicator bg-danger tooltip cursor-pointer" title="Conteo"> 0 en total </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-3xl font-medium leading-8 mt-6">3.721</div>
+                                                    <div class="text-base text-slate-500 mt-1">Inversiones</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <a href="inversionesNFT.html">
+                                            <div class="report-box zoom-in">
+                                                <div class="box p-5">
+                                                    <div class="flex">
+                                                        <i data-lucide="image" class="report-box__icon text-warning"></i> 
+                                                        <div class="ml-auto">
+                                                            <div class="report-box__indicator bg-danger tooltip cursor-pointer" title="Conteo"> 0 en total </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-3xl font-medium leading-8 mt-6">2.149</div>
+                                                    <div class="text-base text-slate-500 mt-1">Inversiones NFT</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <a href="afiliados.html">
+                                            <div class="report-box zoom-in">
+                                                <div class="box p-5">
+                                                    <div class="flex">
+                                                        <i data-lucide="users" class="report-box__icon text-success"></i> 
+                                                        <div class="ml-auto">
+                                                            <div class="report-box__indicator bg-success tooltip cursor-pointer" title="Conteo"> 7 en total </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-3xl font-medium leading-8 mt-6">152.040</div>
+                                                    <div class="text-base text-slate-500 mt-1">Afiliados</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: General Report -->
+                           
+                            <!-- BEGIN: Actividad de acceso -->
+                            <div class="col-span-12 mt-6 intro-y">
+                                <div class="overflow-x-auto">
+                                    <table class="table">
+                                        <thead class="table-dark intro-y">
+                                            <tr>
+                                                <th class="whitespace-nowrap">Direccion IP</th>
+                                                <th class="whitespace-nowrap">Pais</th>
+                                                <th class="whitespace-nowrap">Sistema operativo</th>
+                                                <th class="whitespace-nowrap">Dispositivo</th>
+                                                <th class="whitespace-nowrap">Fecha</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="intro-y">
+                                            <tr>
+                                                <td>192.168.4.21</td>
+                                                <td>Republica Dominicana</td>
+                                                <td>Linux OS</td>
+                                                <td>Mobil</td>
+                                                <td>16 nov 2022, 12:44:25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>192.168.4.21</td>
+                                                <td>Turquia</td>
+                                                <td>Mac OS</td>
+                                                <td>Desktop</td>
+                                                <td>16 nov 2022, 12:44:25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>192.168.4.21</td>
+                                                <td>Rusia</td>
+                                                <td>Windows OS</td>
+                                                <td>Desktop</td>
+                                                <td>16 nov 2022, 12:44:25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END: Actividad de acceso -->
+                        </div>
+                    </div>
+                    <div class="col-span-12 2xl:col-span-3">
+                        <div class="2xl:border-l -mb-10 pb-10">
+                            <div class="2xl:pl-6 grid grid-cols-12 gap-x-6 2xl:gap-x-0 gap-y-6">
+                                <!-- BEGIN: Important Notes -->
+                                <div class="col-span-12 md:col-span-6 xl:col-span-12 mt-3 2xl:mt-8">
+                                    <div class="intro-x flex items-center h-10">
+                                        <h2 class="text-lg font-medium truncate mr-auto">
+                                            Información importante
+                                        </h2>
+                                        <button data-carousel="important-notes" data-target="prev" class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"> <i data-lucide="chevron-left" class="w-4 h-4"></i> </button>
+                                        <button data-carousel="important-notes" data-target="next" class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"> <i data-lucide="chevron-right" class="w-4 h-4"></i> </button>
+                                    </div>
+                                    <div class="mt-5 intro-x">
+                                        <div class="box zoom-in">
+                                            <div class="tiny-slider" id="important-notes">
+                                                <div class="p-5">
+                                                    <div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+                                                    <div class="text-slate-400 mt-1">20 Hours ago</div>
+                                                    <div class="text-slate-500 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                                    <div class="font-medium flex mt-5">
+                                                        <button type="button" class="btn btn-secondary py-1 px-2">View Notes</button>
+                                                        <button type="button" class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss</button>
+                                                    </div>
+                                                </div>
+                                                <div class="p-5">
+                                                    <div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+                                                    <div class="text-slate-400 mt-1">20 Hours ago</div>
+                                                    <div class="text-slate-500 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                                    <div class="font-medium flex mt-5">
+                                                        <button type="button" class="btn btn-secondary py-1 px-2">View Notes</button>
+                                                        <button type="button" class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss</button>
+                                                    </div>
+                                                </div>
+                                                <div class="p-5">
+                                                    <div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+                                                    <div class="text-slate-400 mt-1">20 Hours ago</div>
+                                                    <div class="text-slate-500 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                                    <div class="font-medium flex mt-5">
+                                                        <button type="button" class="btn btn-secondary py-1 px-2">View Notes</button>
+                                                        <button type="button" class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END: Important Notes -->
+
+
+                                <!-- BEGIN: Mercados -->
+                                <div class="col-span-12 md:col-span-6 xl:col-span-12 mt-3 2xl:mt-8">
+                                    <div class="intro-x flex items-center h-10">
+                                        <h2 class="text-lg font-medium truncate mr-5">
+                                            Mercados
+                                        </h2>
+                                    </div>
+
+
+                                    <!-- BEGIN: Tasas -->
+                                    <div class="mt-5">
+                                        <a href="vender.html">
+                                            <div class="intro-x">
+                                                <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                    <div class="ml-4 mr-auto">
+                                                        <div class="font-medium">TASA DE VENTA</div>
+                                                        <div class="text-slate-500 text-xs mt-0.5">Pesos por dolar</div>
+                                                        <div class="font-medium">52.55 USD</div>
+                                                    </div>
+                                                    <div class="ml-4 mr-auto">
+                                                        <div class="text-slate-500 text-xs mt-0.5">Venta minima: USD 30</div>
+                                                        <div class="text-slate-500 text-xs mt-0.5">Venta maxima: USD 14,000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- END: Tasas -->
+
+                                    <div class="mt-5">
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-12.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">BTC</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Bitcoin</div>
+                                                </div>
+                                                <div class="text-success">USD$ 16,424.42</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-7.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">ETH</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Ethereum</div>
+                                                </div>
+                                                <div class="text-success">USD$ 1,233</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-9.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">LTC</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Litecoin</div>
+                                                </div>
+                                                <div class="text-success">USD$ 73</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-1.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">ADA</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Cardano</div>
+                                                </div>
+                                                <div class="text-success">USD$ 0.324</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-5.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">DOGE</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Dogecoin</div>
+                                                </div>
+                                                <div class="text-danger">USD$ 0.7554</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-5.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">TRX</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Tron</div>
+                                                </div>
+                                                <div class="text-danger">USD$ 0.032</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-5.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">DOGE</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Dogecoin</div>
+                                                </div>
+                                                <div class="text-danger">USD$ 0.7554</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="PAI Exchange - Image" src="dist/images/profile-5.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">DOGE</div>
+                                                    <div class="text-slate-500 text-xs mt-0.5">Dogecoin</div>
+                                                </div>
+                                                <div class="text-danger">USD$ 0.7554</div>
+                                            </div>
+                                        </div>
+                                        <!-- <a href="" class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-slate-400 dark:border-darkmode-300 text-slate-500">View More</a>  -->
+                                    </div>
+                                </div>
+                                <!-- END: Transactions -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Content -->
+        </div>
+        
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+
+        <div data-url="side-menu-dark-chat.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box dark:bg-dark-2 border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-gray-700 dark:text-gray-300">Dark Mode</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div>
+        
+    </body>
+</html>

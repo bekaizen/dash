@@ -15,8 +15,8 @@ import tippy, { roundArrow } from "tippy.js";
                 tippy(this, {
                     content: content,
                     arrow: roundArrow,
-                    animation: "shift-away",
-                    placement: "right",
+                    // animation: "shift-away",
+                    // placement: "right",
                 });
             }
 

@@ -1,0 +1,233 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!-- <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Mercados</span></a> de TradingView</div> -->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+        "symbols": [
+            {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+            },
+            {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+            },
+            {
+                "description": "Cardano",
+                "proName": "CRYPTOCAP:ADA"
+            },
+            {
+                "description": "",
+                "proName": "BINANCE:BTCUSDT"
+            },
+            {
+                "description": "BNB",
+                "proName": "BINANCE:BNBUSDT"
+            }
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": true,
+        "displayMode": "adaptive",
+        "locale": "es",
+    };
+    </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+<div class="intro-y block sm:flex items-center h-10 mt-12">
+    <h2 class="truncate mr-5">
+        <div class="text-slate-500">Balance</div>
+        <span class="text-2xl">$<span>18,370</span></span>
+    </h2>
+    <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
+        <button class="btn box flex items-center text-slate-600 dark:text-slate-300"> <i data-lucide="clock" class="mr-2"></i> Historial </button>
+        <button class="ml-3 btn box flex items-center text-slate-600 dark:text-slate-300"> <i data-lucide="alert-circle" class="mr-2"></i> Importante </button>
+    </div>
+</div>
+
+
+<!-- BEGIN: Contenido dinamico de monedas para inversion -->
+<div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
+    <table class="table table-report sm:mt-2">
+        <thead>
+            <tr>
+                <th class="whitespace-nowrap">Inversión</th>
+                <th class="whitespace-nowrap">Participación</th>
+                <th class="whitespace-nowrap">Finalización</th>
+                <th class="whitespace-nowrap">Ganancias</th>
+                <th class="whitespace-nowrap">Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="intro-x">
+                <td class="w-150">
+                    <div class="flex items-center">
+                        <div class="w-30 mr-6">
+                            <div class="flex">
+                                <div class="w-10 h-10 image-fit z-10 zoom-in">
+                                    <img alt="PAI Exchange" class="tooltip rounded-full" src="src/images/btc.png" title="Bitcoin">
+                                </div>
+                                <div class="w-10 h-10 image-fit z-0 -ml-5">
+                                    <img alt="PAI Echange" class="tooltip rounded-full" src="src/images/ada.png" title="Cardano">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- ParticipaciónFinalizaciónGanancias -->
+                            <a href="" class="font-medium whitespace-nowrap">BTC/ADA</a> 
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Inversión</div>
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="w-150">
+                    <i data-lucide="bar-chart"></i>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Participación</div>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                </td>
+                <td class="w-150"> 
+                    <span>Finalización</span>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Noviembre 30, 2022</div>
+                </td>
+                <td class="w-150"> 
+                   <span>Ganancias</span>
+                   <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5"> $ <span class="tooltip rounded-full" title="Lo que has generado">0.00</span></div> 
+                </td>
+                <td class="text-justify-end">
+                    <div class="flex items-center">
+                        <a class="flex items-center text-success mr-6" data-tw-toggle="modal" data-tw-target="#basic-modal-preview-deposits" href="javascript:;.html"> Invertir </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="intro-x">
+                <td class="w-150">
+                    <div class="flex items-center">
+                        <div class="w-30 mr-6">
+                            <div class="flex">
+                                <div class="w-10 h-10 image-fit z-10 zoom-in">
+                                    <img alt="PAI Exchange" class="tooltip rounded-full" src="src/images/btc.png" title="Bitcoin">
+                                </div>
+                                <div class="w-10 h-10 image-fit z-0 -ml-5">
+                                    <img alt="PAI Echange" class="tooltip rounded-full" src="src/images/ada.png" title="Cardano">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- ParticipaciónFinalizaciónGanancias -->
+                            <a href="" class="font-medium whitespace-nowrap">BTC/ADA</a> 
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Inversión</div>
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="w-150">
+                    <i data-lucide="bar-chart"></i>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Participación</div>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                </td>
+                <td class="w-150"> 
+                    <span>Finalización</span>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Noviembre 30, 2022</div>
+                </td>
+                <td class="w-150"> 
+                   <span>Ganancias</span>
+                   <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5"> $ <span class="tooltip rounded-full" title="Lo que has generado">0.00</span></div> 
+                </td>
+                <td class="text-justify-end">
+                    <div class="flex items-center">
+                        <a class="flex items-center text-success mr-6" data-tw-toggle="modal" data-tw-target="#basic-modal-preview-deposits" href="javascript:;.html"> Invertir </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="intro-x">
+                <td class="w-150">
+                    <div class="flex items-center">
+                        <div class="w-30 mr-6">
+                            <div class="flex">
+                                <div class="w-10 h-10 image-fit z-10 zoom-in">
+                                    <img alt="PAI Exchange" class="tooltip rounded-full" src="src/images/btc.png" title="Bitcoin">
+                                </div>
+                                <div class="w-10 h-10 image-fit z-0 -ml-5">
+                                    <img alt="PAI Echange" class="tooltip rounded-full" src="src/images/ada.png" title="Cardano">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- ParticipaciónFinalizaciónGanancias -->
+                            <a href="" class="font-medium whitespace-nowrap">BTC/ADA</a> 
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Inversión</div>
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="w-150">
+                    <i data-lucide="bar-chart"></i>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Participación</div>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                </td>
+                <td class="w-150"> 
+                    <span>Finalización</span>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Noviembre 30, 2022</div>
+                </td>
+                <td class="w-150"> 
+                   <span>Ganancias</span>
+                   <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5"> $ <span class="tooltip rounded-full" title="Lo que has generado">0.00</span></div> 
+                </td>
+                <td class="text-justify-end">
+                    <div class="flex items-center">
+                        <a class="flex items-center text-success mr-6" data-tw-toggle="modal" data-tw-target="#basic-modal-preview-deposits" href="javascript:;.html"> Invertir </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="intro-x">
+                <td class="w-150">
+                    <div class="flex items-center">
+                        <div class="w-30 mr-6">
+                            <div class="flex">
+                                <div class="w-10 h-10 image-fit z-10 zoom-in">
+                                    <img alt="PAI Exchange" class="tooltip rounded-full" src="src/images/btc.png" title="Bitcoin">
+                                </div>
+                                <div class="w-10 h-10 image-fit z-0 -ml-5">
+                                    <img alt="PAI Echange" class="tooltip rounded-full" src="src/images/ada.png" title="Cardano">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- ParticipaciónFinalizaciónGanancias -->
+                            <a href="" class="font-medium whitespace-nowrap">BTC/ADA</a> 
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Inversión</div>
+                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="w-150">
+                    <i data-lucide="bar-chart"></i>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Participación</div>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">- -</div>
+                </td>
+                <td class="w-150"> 
+                    <span>Finalización</span>
+                    <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Noviembre 30, 2022</div>
+                </td>
+                <td class="w-150"> 
+                   <span>Ganancias</span>
+                   <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5"> $ <span class="tooltip rounded-full" title="Lo que has generado">0.00</span></div> 
+                </td>
+                <td class="text-justify-end">
+                    <div class="flex items-center">
+                        <a class="flex items-center text-success mr-6" data-tw-toggle="modal" data-tw-target="#basic-modal-preview-deposits" href="javascript:;.html"> Invertir </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- END: Contenido dinamico de monedas para inversion -->
+
+</div>

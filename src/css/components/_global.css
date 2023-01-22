@@ -1,9 +1,9 @@
 html {
-    @apply bg-primary md:bg-slate-200;
+    @apply bg-primary md:bg-sky-200;
     &.dark {
         @apply bg-darkmode-800;
         body {
-            @apply text-slate-300;
+            @apply text-sky-300;
             *,
             ::before,
             ::after {
@@ -12,7 +12,7 @@ html {
         }
     }
     body {
-        @apply antialiased overflow-x-hidden font-roboto text-sm text-slate-800;
+        @apply antialiased overflow-x-hidden font-roboto text-sm text-sky-800;
         @include media-breakpoint-down(md) {
             @apply px-8;
         }

@@ -1,0 +1,302 @@
+<!-- BEGIN: Weekly Top Products -->
+<div class="col-span-12 mt-6">
+    <div class="intro-y block sm:flex items-center h-10">
+        <h2 class="text-lg font-medium truncate mr-5">
+            Tus carteras
+        </h2>
+        <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
+            <button class="btn box flex items-center text-slate-600 dark:text-slate-300" data-tw-toggle="modal" data-tw-target="#basic-modal-preview" > <i data-lucide="plus" class="hidden sm:block w-4 h-4 mr-2"></i> Agregar moneda </button>
+        </div>
+    </div>
+
+
+    
+    
+    <!--
+        -
+        - @VENTANA MODAL PARA AGREGAR MODENAS
+        -
+    -->
+    <!-- BEGIN: Modal Content --> 
+    <div id="basic-modal-preview" class="modal" tabindex="-1" aria-hidden="true"> 
+        <div class="modal-dialog"> 
+            <div class="modal-content"> 
+                <div class="modal-body p-10">
+                    <div class="overflow-x-auto">
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td><img src="src/images/ada.png"></td>
+                                    <td>
+                                        <span class="font-medium whitespace-nowrap">(ADA) Cardano</span> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">$0.32 USD</div>
+                                    </td>
+                                    <td>
+                                        <div></div>
+                                        <i data-lucide="plus-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="src/images/bnb.png"></td>
+                                    <td>
+                                        <span class="font-medium whitespace-nowrap">(BNB) Binance Coin</span> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">$232.32 USD</div>
+                                    </td>
+                                    <td>
+                                        <div></div>
+                                        <i data-lucide="plus-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="src/images/btc.png"></td>
+                                    <td>
+                                        <span class="font-medium whitespace-nowrap">(BTC) Bitcoin</span> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">$16,549 USD</div>
+                                    </td>
+                                    <td>
+                                        <div></div>
+                                        <i data-lucide="plus-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="src/images/eth.png"></td>
+                                    <td>
+                                        <span class="font-medium whitespace-nowrap">(ETH) Ethereum</span> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">$1,200.32 USD</div>
+                                    </td>
+                                    <td>
+                                        <div></div>
+                                        <i data-lucide="plus-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="src/images/ada.png"></td>
+                                    <td>
+                                        <span class="font-medium whitespace-nowrap">(ADA) Cardano</span> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">$0.32 USD</div>
+                                    </td>
+                                    <td>
+                                        <div></div>
+                                        <i data-lucide="plus-circle"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div> 
+    <!-- END: Modal Content --> 
+
+
+
+    <!--
+        -
+        - @VENTANA MODAL PARA DEPOSITOS
+        -
+    -->
+    <!-- BEGIN: Modal Content --> 
+    <div id="basic-modal-preview-deposits" class="modal" tabindex="-1" aria-hidden="true"> 
+        <div class="modal-dialog"> 
+            <div class="modal-content"> 
+                <div class="modal-body p-10">
+                    <div class="dark mb-6">
+                        <table class="table table-report sm:mt-2">
+                            <tbody>
+                                <tr class="intro-x">
+                                    <td>
+                                        <div class="flex items-center">
+                                            <div class="w-10 h-10 image-fit zoom-in mr-4">
+                                                <img alt="PAI Echange" class="tooltip rounded-full" src="src/images/ada.png" title="Cardano">
+                                            </div>
+                                            <div>
+                                                <a href="" class="font-medium whitespace-nowrap text-white">Cardano</a> 
+                                                <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">ADA</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-150"> 
+                                       <span class="text-white">0.738400000</span>
+                                       <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">= ~ <span class="tooltip rounded-full" title="Conversion de tasa 52.2 DOP x USD">$12,980.22</span></div> 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center mb-6 w-200">
+                        <img
+                        width="200"
+                        height="200"
+                        src="src/images/QRSample.png"
+                        class="p-1 bg-white border rounded max-w-sm"
+                        alt="..."
+                      />
+                    </div>
+
+                    <!-- BEGIN: NOTIFICACION PARA COPIADO DE CARTERA -->
+                    <div id="success-notification-content" class="toastify-content hidden flex"> <i class="text-success" data-lucide="check-circle"></i>
+                        <div class="ml-4 mr-4">
+                            <div class="font-medium">Direccion copiada!</div>
+                            <div class="text-slate-500 mt-1">La direccion <span>12Wa2nDtfqCN21qBQBKLAm14hJVfEdW1VT</span> ha sido copiada para su uso.</div>
+                        </div> 
+                    </div> 
+                    <!-- END: Notification Content -->
+
+                    <div class="mb-4 text-slate-600 dark:text-slate-500">Direccion de cartera</div>
+                    <div class="input-group mb-10 cursor-pointer" id="success-notification-toggle" onclick="copyAddress()">
+                        <div id="input-group-email" class="input-group-text">
+                            <i data-lucide="copy"></i>
+                        </div> 
+                        <input type="text" id="tokenAddress" class="form-control whitespace-nowrap" value="12Wa2nDtfqCN21qBQBKLAm14hJVfEdW1VT" disabled aria-label="" aria-describedby="input-group-email">
+                    </div>
+                    <!-- 
+                        -
+                        - @ HISTORIAL DE TRANSACCIONES EN VENTANA MODAL INDIVIDUAL
+                        -
+                     -->
+                    <div class="mb-4 text-slate-600 dark:text-slate-500">Historial</div>
+                    <!-- Muestra de acordean para historial de transacciones -->
+                    <!--
+                        - @ DATOS DINAMICOS DE TRANSACCIONES
+                    -->
+                    <div id="faq-accordion-1" class="accordion">
+                        <div class="accordion-item">
+                            <div id="faq-accordion-content-1" class="accordion-header"> 
+                                <div class="accordion-button" data-tw-toggle="collapse" data-tw-target="#faq-accordion-collapse-1" aria-expanded="true" aria-controls="faq-accordion-collapse-1"> 
+                                    <table class="table table-report sm:mt-2">
+                                        <tbody>
+                                            <tr class="intro-x cursor-pointer">
+                                                <td class="">
+                                                    <div class="flex items-center">
+                                                        <div class="mr-4">
+                                                            <i data-lucide="check" class="text-success"></i>
+                                                        </div>
+                                                        <div>
+                                                            <a href="javascript:;.html" class="font-medium whitespace-nowrap">15 octubre, 2022</a> 
+                                                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5 w-100">12Wa2nDtfqCN21qBQBKLAm14hJVfEdW1VT</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                            </div>
+
+                            <div id="faq-accordion-collapse-1" class="accordion-collapse collapse show" aria-labelledby="faq-accordion-content-1" data-tw-parent="#faq-accordion-1">
+                                <div class="accordion-body text-slate-600 dark:text-slate-500 leading-relaxed"> 
+                                    <div>Monto: <span>520</span></div>
+                                    TxID: <span>12Wa2nDtfqCN21qBQBKLAm14hJVfEdW1VT</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- @END: NOTIFICACION PARA COPIADO DE CARTERA -->
+                        
+                        <!--
+                            - @ DATOS DINAMICOS DE TRANSACCIONES
+                        -->
+                        <div class="accordion-item">
+                            <div id="faq-accordion-content-2" class="accordion-header"> 
+                                <div class="accordion-button" data-tw-toggle="collapse" data-tw-target="#faq-accordion-collapse-2" aria-expanded="true" aria-controls="faq-accordion-collapse-2"> 
+                                    <table class="table table-report sm:mt-2">
+                                        <tbody>
+                                            <tr class="intro-x cursor-pointer">
+                                                <td class="">
+                                                    <div class="flex items-center">
+                                                        <div class="mr-4">
+                                                            <i data-lucide="x" class="text-success"></i>
+                                                        </div>
+                                                        <div>
+                                                            <a href="javascript:;.html" class="font-medium whitespace-nowrap">15 octubre, 2022</a> 
+                                                            <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5 w-100">12Wa2nDtfqCN21qBQBKLAm14hJVfEdW1VT</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                            </div>
+                            <div id="faq-accordion-collapse-2" class="accordion-collapse collapse" aria-labelledby="faq-accordion-content-2" data-tw-parent="#faq-accordion-2">
+                                <div class="accordion-body text-slate-600 dark:text-slate-500 leading-relaxed"> 
+                                    <div>Monto: <span>50</span></div>
+                                    TxID: <span>12Wa2nDtfqCN21qBQBKLAm14hJVfEdW1VT</span>    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- @END: Datos dinamicos de transacciones -->
+                    </div>
+                    <!-- @END: Muestra de acordeon para historial de transacciones -->
+                </div>
+            </div> 
+        </div> 
+
+        <script>
+            function copyAddress() {
+                // Get the text field
+                var copyText = document.getElementById("tokenAddress");
+              
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+              
+                 // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);
+              
+                // Alert the copied text
+                // alert("Direccion copiada: " + copyText.value);
+            }
+        </script>
+    </div> 
+    <!-- END: Modal Content --> 
+
+
+
+    <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
+        <table class="table table-report sm:mt-2">
+            <thead>
+                <tr>
+                    <th class="whitespace-nowrap">Moneda</th>
+                    <th class="whitespace-nowrap">Total</th>
+                    <th class="whitespace-nowrap">Valor en btc</th>
+                    <th class="whitespace-nowrap">Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="intro-x">
+                    <td class="w-150">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 image-fit zoom-in mr-4">
+                                <img alt="PAI Echange" class="tooltip rounded-full" src="src/images/ada.png" title="Cardano">
+                            </div>
+                            <div>
+                                <a href="" class="font-medium whitespace-nowrap">Cardano</a> 
+                                <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">ADA</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="w-150">
+                        <span>234</span>
+                    </td>
+                    <td class="w-150"> 
+                       <span>0.738400000</span>
+                       <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">= ~ <span class="tooltip rounded-full" title="Conversion de tasa 52.2 DOP x USD">$12,980.22</span></div> 
+                    </td>
+                    <td class="">
+                        <div class="flex items-center">
+                            <a class="flex items-center text-success mr-6" data-tw-toggle="modal" data-tw-target="#basic-modal-preview-deposits" href="javascript:;.html"> Depositar </a>
+                            <a class="flex items-center text-success mr-6" href="vender.html"> Vender </a>
+                            <a class="flex items-center text-success" href="transferir.html"> Transferir </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- END: Weekly Top Products -->
+</div>
+
+

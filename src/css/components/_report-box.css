@@ -4,7 +4,7 @@
         content: "";
         width: 90%;
         box-shadow: 0px 3px 20px #0000000b;
-        @apply bg-slate-50 h-full mt-3 absolute rounded-md mx-auto inset-x-0 dark:bg-darkmode-400/70;
+        @apply bg-sky-50 h-full mt-3 absolute rounded-md mx-auto inset-x-0 dark:bg-darkmode-400/70;
     }
     .report-box__icon {
         width: 28px;

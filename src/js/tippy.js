@@ -29,7 +29,7 @@ import tippy, { roundArrow } from "tippy.js";
 
         tippy(this, {
             arrow: roundArrow,
-            animation: "shift-away",
+            // animation: "shift-away",
             ...options,
         });
     });

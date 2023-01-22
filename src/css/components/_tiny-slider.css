@@ -1,9 +1,9 @@
 .tns-outer {
     @apply relative;
     .tns-controls button {
-        @apply w-5 h-5 bg-slate-200 text-transparent rounded-full absolute inset-y-0 my-auto z-10 outline-none dark:bg-darkmode-300;
+        @apply w-5 h-5 bg-sky-200 text-transparent rounded-full absolute inset-y-0 my-auto z-10 outline-none dark:bg-darkmode-300;
         &:hover {
-            @apply bg-slate-300 dark:bg-darkmode-200;
+            @apply bg-sky-300 dark:bg-darkmode-200;
         }
         &[data-controls="prev"] {
             @apply left-0 -ml-6;
@@ -28,9 +28,9 @@
         margin-bottom: -1.8rem;
         @apply w-full absolute bottom-0 z-10 flex justify-center;
         button {
-            @apply bg-slate-300 w-3 h-3 rounded-full mx-1 outline-none dark:bg-darkmode-300;
+            @apply bg-sky-300 w-3 h-3 rounded-full mx-1 outline-none dark:bg-darkmode-300;
             &.tns-nav-active {
-                @apply bg-slate-500 dark:bg-darkmode-200;
+                @apply bg-sky-500 dark:bg-darkmode-200;
             }
         }
     }

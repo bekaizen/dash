@@ -24,25 +24,25 @@ export default {
         `rgb(${el.getPropertyValue("--color-dark")} / ${opacity})`,
     slate: {
         50: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-50")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-50")} / ${opacity})`,
         100: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-100")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-100")} / ${opacity})`,
         200: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-200")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-200")} / ${opacity})`,
         300: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-300")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-300")} / ${opacity})`,
         400: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-400")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-400")} / ${opacity})`,
         500: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-500")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-500")} / ${opacity})`,
         600: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-600")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-600")} / ${opacity})`,
         700: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-700")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-700")} / ${opacity})`,
         800: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-800")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-800")} / ${opacity})`,
         900: (opacity = 1) =>
-            `rgb(${el.getPropertyValue("--color-slate-900")} / ${opacity})`,
+            `rgb(${el.getPropertyValue("--color-sky-900")} / ${opacity})`,
     },
     darkmode: {
         50: (opacity = 1) =>

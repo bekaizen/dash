@@ -1,0 +1,89 @@
+<div class="col-span-12 2xl:col-span-9 grid grid-cols-2 gap-6">
+
+    <div class="mt-10">
+        <div class="bg-white p-10 h-auto rounded-md shadow">
+            <!-- BEGIN: Validation Form -->
+            <form class="validate-form ">
+                <div class="input-form">
+                    <label for="validation-form-1" class="form-label w-full flex flex-col sm:flex-row">
+                        Nombre <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Verfica que tu nombre sea el
+                            correcto</span>
+                    </label>
+                    <input id="validation-form-1" type="text" name="name" class="form-control" placeholder="John Legend"
+                        minlength="2" required>
+                </div>
+                <div class="input-form mt-3">
+                    <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row">
+                        Nombre de usuario <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Este campo no
+                            puede ser editado</span>
+                    </label>
+                    <input id="validation-form-2" type="text" name="user_name" class="form-control"
+                        placeholder="johndoe" value="johndoe" disabled>
+                </div>
+                <div class="input-form mt-3">
+                    <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row">
+                        Email <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Este campo es
+                            obligatorio</span>
+                    </label>
+                    <input id="validation-form-2" type="email" name="email" class="form-control"
+                        placeholder="example@gmail.com" required>
+                </div>
+                <div class="input-form mt-3">
+                    <label for="validation-form-3" class="form-label w-full flex flex-col sm:flex-row">
+                        Telefono <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Es requerido para
+                            confirmaciones y asistencias</span>
+                    </label>
+                    <input id="validation-form-3" type="text" name="telefono" class="form-control" value="8295557787"
+                        required>
+                </div>
+                <div class="input-form mt-3">
+                    <label for="validation-form-4" class="form-label w-full flex flex-col sm:flex-row">
+                        Cedula <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Este campo no puede ser
+                            editado</span>
+                    </label>
+                    <input id="validation-form-4" type="text" name="cedula" class="form-control"
+                        placeholder="031000000001" value="031000000001" disabled>
+                </div>
+                <div class="input-form mt-3">
+                    <label for="validation-form-5" class="form-label w-full flex flex-col sm:flex-row">
+                        ID de usuario <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Este campo no puede
+                            ser editado</span>
+                    </label>
+                    <input id="validation-form-5" type="number" name="user_id" class="form-control" placeholder="18790"
+                        value="18790" disabled>
+                </div>
+                <div class="input-form mt-3">
+                    <label for="validation-form-6"
+                        class="form-label w-full flex flex-col sm:flex-row alert alert-secondary show mb-4"
+                        role="alert">
+                        Verificacion de cuenta <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at
+                            least 10 characters</span>
+                    </label>
+                </div>
+                <div class="flex"> <i data-lucide="check" class="text-success mr-2"></i> <span>Cuenta verificada</span>
+                </div>
+                <button type="submit" class="btn btn-secondary mt-5 mr-4">Editar</button> <button type="submit"
+                    class="btn btn-primary mt-5">Guardar</button>
+            </form> <!-- END: Validation Form -->
+            <!-- BEGIN: Success Notification Content -->
+            <div id="success-notification-content" class="toastify-content hidden flex"> <i class="text-success"
+                    data-lucide="check-circle"></i>
+                <div class="ml-4 mr-4">
+                    <div class="font-medium">Registration success!</div>
+                    <div class="text-slate-500 mt-1"> Please check your e-mail for further info! </div>
+                </div>
+            </div> <!-- END: Success Notification Content -->
+            <!-- BEGIN: Failed Notification Content -->
+            <div id="failed-notification-content" class="toastify-content hidden flex"> <i class="text-danger"
+                    data-lucide="x-circle"></i>
+                <div class="ml-4 mr-4">
+                    <div class="font-medium">Registration failed!</div>
+                    <div class="text-slate-500 mt-1"> Please check the fileld form. </div>
+                </div>
+            </div> <!-- END: Failed Notification Content -->
+        </div>
+    </div>
+
+    <div></div>
+
+</div>

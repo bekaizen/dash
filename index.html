@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="light">
     <!-- BEGIN: Head -->
@@ -12,21 +13,27 @@
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" href="dist/css/app.css" />
         <!-- END: CSS Assets-->
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+        
+
     </head>
     <!-- END: Head -->
     <body class="py-5 md:py-0">
-        <!-- BEGIN: Mobile Menu -->
-        <div class="mobile-menu md:hidden">
+        
+         <!-- BEGIN: Mobile Menu -->
+         <div class="mobile-menu md:hidden">
             <div class="mobile-menu-bar">
                 <a href="" class="flex mr-auto">
-                    <img alt="PAI Exchange - Image" class="w-6" src="dist/images/logo.svg">
+                    <img alt="PAI Exchange - Image" class="w-22" src="dist/images/logo.svg">
                 </a>
                 <a href="javascript:;" id="mobile-menu-toggler"> <i data-lucide="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
             </div>
             <ul class="border-t border-white/[0.08] py-5 hidden"> 
-                <ul>
+                <ul class="menu-secuense">
                     <li>
-                        <a href="javascript:;.html" class="menu menu--active">
+                        <a href="#home" class="menu menu--active">
                             <div class="menu__icon"> <i data-lucide="home"></i> </div>
                             <div class="menu__title">
                                 Dashboard 
@@ -36,25 +43,49 @@
                     </li>
                     <li>
 
-                        <a href="javascript:;" class="menu">
-                            <div class="menu__icon"> <i data-lucide="dollar-sign"></i> </div>
+                        <a href="#vender" class="menu">
+                            <div class="menu__icon"> <i data-lucide="bitcoin"></i> </div>
                             <div class="menu__title"> Vender </div>
                         </a>
                     </li>
                     <li>
-                        <a href="menu-light-inbox.html" class="menu">
+                        <a href="#transferir" class="menu">
                             <div class="menu__icon"> <i data-lucide="send"></i> </div>
                             <div class="menu__title"> Transferir </div>
                         </a>
                     </li>
                     <li>
-                        <a href="menu-light-file-manager.html" class="menu">
-                            <div class="menu__icon"> <i data-lucide="briefcase"></i> </div>
+                        <a href="#cartera" class="menu">
+                            <div class="menu__icon"> <i data-lucide="wallet"></i> </div>
                             <div class="menu__title"> Cartera </div>
                         </a>
                     </li>
                     <li>
-                        <a href="menu-light-chat.html" class="menu">
+                        <a href="#afiliados" class="menu">
+                            <div class="menu__icon"> <i data-lucide="users"></i> </div>
+                            <div class="menu__title"> Afiliados </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#inversiones" class="menu">
+                            <div class="menu__icon"> <i data-lucide="pie-chart"></i> </div>
+                            <div class="menu__title"> Inversiones </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#inversionesnft" class="menu">
+                            <div class="menu__icon"> <i data-lucide="image"></i> </div>
+                            <div class="menu__title"> Inversiones NFT </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#envios" class="menu">
+                            <div class="menu__icon"> <i data-lucide="Arrow-left-right"></i> </div>
+                            <div class="menu__title"> Envios </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cuenta" class="menu">
                             <div class="menu__icon"> <i data-lucide="user"></i> </div>
                             <div class="menu__title"> Cuenta </div>
                         </a>
@@ -63,37 +94,49 @@
                     <li class="menu__devider my-6"></li>
     
                 <li>
-                    <a href="javascript:;" class="menu">
+                    <a href="#configuracion" class="menu">
                         <div class="menu__icon"> <i data-lucide="settings"></i> </div>
                         <div class="menu__title"> Configuracion <i data-lucide="chevron-down" class="menu__sub-icon "></i>  </div>
                     </a>
                     <ul class="">
                         <li>
-                            <a href="menu-light-crud-data-list.html" class="menu">
+                            <a href="#verificacion-de-cuenta" class="menu">
                                 <div class="menu__icon"> <i data-lucide="shield"></i> </div>
                                 <div class="menu__title"> Verificacion de cuenta </div>
                             </a>
                         </li>
                         <li>
-                            <a href="menu-light-crud-form.html" class="menu">
+                            <a href="#validacion-2fa" class="menu">
                                 <div class="menu__icon"> <i data-lucide="lock"></i> </div>
                                 <div class="menu__title"> Validacion 2FA </div>
                             </a>
                         </li>
                         <li>
-                            <a href="menu-light-crud-form.html" class="menu">
+                            <a href="#codigo-pin" class="menu">
                                 <div class="menu__icon"> <i data-lucide="hash"></i> </div>
                                 <div class="menu__title"> Activar codigo PIN </div>
                             </a>
                         </li>
                         <li>
-                            <a href="menu-light-crud-form.html" class="menu">
+                            <a href="#consejos-seguridad" class="menu">
                                 <div class="menu__icon"> <i data-lucide="alert-triangle"></i> </div>
                                 <div class="menu__title"> Consejos de seguridad </div>
                             </a>
                         </li>
                         <li>
-                            <a href="menu-light-crud-form.html" class="menu">
+                            <a href="#ayuda" class="menu">
+                                <div class="menu__icon"> <i data-lucide="help-circle"></i> </div>
+                                <div class="menu__title"> Ayuda </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#soporte" class="menu">
+                                <div class="menu__icon"> <i data-lucide="life-buoy"></i> </div>
+                                <div class="menu__title"> Soporte </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#cerrar-sesion" class="menu">
                                 <div class="menu__icon"> <i data-lucide="power"></i> </div>
                                 <div class="menu__title"> Cerrar sesion </div>
                             </a>
@@ -115,8 +158,8 @@
                 <!-- BEGIN: Breadcrumb -->
                 <nav aria-label="breadcrumb" class="-intro-x h-[45px] mr-auto">
                     <ol class="breadcrumb breadcrumb-light">
-                        <li class="breadcrumb-item"><a href="#">Application</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        <!-- <li class="breadcrumb-item"><a href="#">Application</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li> -->
                     </ol>
                 </nav>
                 <!-- END: Breadcrumb -->
@@ -211,22 +254,16 @@
                                 <hr class="dropdown-divider border-white/[0.08]">
                             </li>
                             <li>
-                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                <a href="#cuenta" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Cuenta </a>
                             </li>
                             <li>
-                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
-                            </li>
-                            <li>
-                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
-                            </li>
-                            <li>
-                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                                <a href="#ayuda" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Ayuda </a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider border-white/[0.08]">
                             </li>
                             <li>
-                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                                <a href="#cerrar-sesion" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Cerrar sesion </a>
                             </li>
                         </ul>
                     </div>
@@ -238,9 +275,9 @@
         <div class="flex overflow-hidden">
             <!-- BEGIN: Side Menu -->
             <nav class="side-nav">
-                <ul>
+                <ul class="menu-secuense">
                     <li>
-                        <a href="javascript:;.html" class="side-menu side-menu--active">
+                        <a href="#home" class="side-menu side-menu--active">
                             <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
                             <div class="side-menu__title">
                                 Dashboard 
@@ -250,49 +287,49 @@
                     </li>
                     <li>
 
-                        <a href="vender.html" class="side-menu">
+                        <a href="#vender" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="bitcoin"></i> </div>
                             <div class="side-menu__title"> Vender </div>
                         </a>
                     </li>
                     <li>
-                        <a href="transferir.html" class="side-menu">
+                        <a href="#transferir" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="send"></i> </div>
                             <div class="side-menu__title"> Transferir </div>
                         </a>
                     </li>
                     <li>
-                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                        <a href="#cartera" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="wallet"></i> </div>
                             <div class="side-menu__title"> Cartera </div>
                         </a>
                     </li>
                     <li>
-                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                        <a href="#afiliados" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="users"></i> </div>
                             <div class="side-menu__title"> Afiliados </div>
                         </a>
                     </li>
                     <li>
-                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                        <a href="#inversiones" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="pie-chart"></i> </div>
                             <div class="side-menu__title"> Inversiones </div>
                         </a>
                     </li>
                     <li>
-                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                        <a href="#inversionesnft" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="image"></i> </div>
                             <div class="side-menu__title"> Inversiones NFT </div>
                         </a>
                     </li>
                     <li>
-                        <a href="side-menu-light-file-manager.html" class="side-menu">
+                        <a href="#envios" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="Arrow-left-right"></i> </div>
                             <div class="side-menu__title"> Envios </div>
                         </a>
                     </li>
                     <li>
-                        <a href="side-menu-light-chat.html" class="side-menu">
+                        <a href="#cuenta" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="user"></i> </div>
                             <div class="side-menu__title"> Cuenta </div>
                         </a>
@@ -301,37 +338,49 @@
                     <li class="side-menu__devider my-6"></li>
     
                     <li>
-                        <a href="javascript:;" class="side-menu">
+                        <a href="javascript:;.html" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="settings"></i> </div>
                             <div class="side-menu__title"> Configuracion <i data-lucide="chevron-down" class="side-menu__sub-icon "></i>  </div>
                         </a>
                         <ul class="">
                             <li>
-                                <a href="side-menu-light-crud-data-list.html" class="side-menu">
+                                <a href="#verificacion-de-cuenta" class="side-menu">
                                     <div class="side-menu__icon"> <i data-lucide="shield"></i> </div>
                                     <div class="side-menu__title"> Verificacion de cuenta </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                <a href="#validacion-2fa" class="side-menu">
                                     <div class="side-menu__icon"> <i data-lucide="lock"></i> </div>
                                     <div class="side-menu__title"> Validacion 2FA </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                <a href="#codigo-pin" class="side-menu">
                                     <div class="side-menu__icon"> <i data-lucide="hash"></i> </div>
                                     <div class="side-menu__title"> Activar codigo PIN </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                <a href="#consejos-seguridad" class="side-menu">
                                     <div class="side-menu__icon"> <i data-lucide="alert-triangle"></i> </div>
                                     <div class="side-menu__title"> Consejos de seguridad </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="side-menu-light-crud-form.html" class="side-menu">
+                                <a href="#ayuda" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="help-circle"></i> </div>
+                                    <div class="side-menu__title"> Ayuda </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#soporte" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-lucide="life-buoy"></i> </div>
+                                    <div class="side-menu__title"> Soporte </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#cerrar-sesion" class="side-menu">
                                     <div class="side-menu__icon"> <i data-lucide="power"></i> </div>
                                     <div class="side-menu__title"> Cerrar sesion </div>
                                 </a>
@@ -341,122 +390,60 @@
                 </ul>
             </nav>
             <!-- END: Side Menu -->
+
+
+
+
+
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
             
+            <script type="text/javascript">
+                function handleMenuStyle() {
+                    var CurrentUrl= document.URL;
+                    var CurrentUrlEnd = CurrentUrl.split('/').filter(Boolean).pop();
+
+                    $( "ul li a" ).each(function() {
+                        var ThisUrl = $(this).attr('href');
+                        var ThisUrlEnd = ThisUrl.split('/').filter(Boolean).pop();
+                        if(ThisUrlEnd == CurrentUrlEnd)
+                            $(this).addClass('side-menu--active menu-active')
+                        else if (ThisUrlEnd === '/')
+                            $(this).addClass('side-menu--active menu-active')
+                        else
+                            $(this).removeClass('side-menu--active menu-active')
+                    });
+                };
+
+                $(document).on('click', 'ul li a', function () {
+                    handleMenuStyle()
+                    history.pushState({}, "", window.location.href.substr(0, window.location.href.indexOf('#')));
+                })
+
+                $(window).on('popstate', function () {
+                    handleMenuStyle()
+                })
+
+                document.addEventListener('popstate', handleMenuStyle());
+            </script>
             <!-- BEGIN: Content -->
             <div class="content">
                 <div class="grid grid-cols-12 gap-6">
                     <div class="col-span-12 2xl:col-span-9">
-                        <div class="grid grid-cols-12 gap-6">
-                            <!-- BEGIN: General Report -->
-                            <div class="col-span-12 mt-8">
-                                <div class="intro-y flex items-center h-10">
-                                    <h2 class="text-lg font-medium truncate mr-5">
-                                        Reporte general
-                                    </h2>
-                                    <a href="" class="ml-auto flex items-center text-primary"> <i data-lucide="refresh-ccw" class="w-4 h-4 mr-3"></i> Recargar </a>
-                                </div>
-                                <div class="grid grid-cols-12 gap-6 mt-5">
-                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                                        <div class="report-box zoom-in">
-                                            <div class="box p-5">
-                                                <div class="flex">
-                                                    <i data-lucide="bitcoin" class="report-box__icon text-primary"></i> 
-                                                    <div class="ml-auto">
-                                                        <div class="report-box__indicator bg-success tooltip cursor-pointer" title="Conteo"> 3 en total </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-3xl font-medium leading-8 mt-6">4.710</div>
-                                                <div class="text-base text-slate-500 mt-1">Balance de cuenta</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                                        <div class="report-box zoom-in">
-                                            <div class="box p-5">
-                                                <div class="flex">
-                                                    <i data-lucide="bar-chart-2" class="report-box__icon text-pending"></i> 
-                                                    <div class="ml-auto">
-                                                        <div class="report-box__indicator bg-danger tooltip cursor-pointer" title="Conteo"> 0 en total </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-3xl font-medium leading-8 mt-6">3.721</div>
-                                                <div class="text-base text-slate-500 mt-1">Inversiones</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                                        <div class="report-box zoom-in">
-                                            <div class="box p-5">
-                                                <div class="flex">
-                                                    <i data-lucide="image" class="report-box__icon text-warning"></i> 
-                                                    <div class="ml-auto">
-                                                        <div class="report-box__indicator bg-danger tooltip cursor-pointer" title="Conteo"> 0 en total </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-3xl font-medium leading-8 mt-6">2.149</div>
-                                                <div class="text-base text-slate-500 mt-1">Inversiones NFT</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                                        <div class="report-box zoom-in">
-                                            <div class="box p-5">
-                                                <div class="flex">
-                                                    <i data-lucide="users" class="report-box__icon text-success"></i> 
-                                                    <div class="ml-auto">
-                                                        <div class="report-box__indicator bg-success tooltip cursor-pointer" title="Conteo"> 7 en total </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-3xl font-medium leading-8 mt-6">152.040</div>
-                                                <div class="text-base text-slate-500 mt-1">Afiliados</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END: General Report -->
-                           
-                            <!-- BEGIN: Actividad de acceso -->
-                            <div class="col-span-12 mt-6 intro-y">
-                                <div class="overflow-x-auto">
-                                    <table class="table">
-                                        <thead class="table-dark intro-y">
-                                            <tr>
-                                                <th class="whitespace-nowrap">Direccion IP</th>
-                                                <th class="whitespace-nowrap">Pais</th>
-                                                <th class="whitespace-nowrap">Sistema operativo</th>
-                                                <th class="whitespace-nowrap">Dispositivo</th>
-                                                <th class="whitespace-nowrap">Fecha</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="intro-y">
-                                            <tr>
-                                                <td>192.168.4.21</td>
-                                                <td>Republica Dominicana</td>
-                                                <td>Linux OS</td>
-                                                <td>Mobil</td>
-                                                <td>16 nov 2022, 12:44:25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.4.21</td>
-                                                <td>Turquia</td>
-                                                <td>Mac OS</td>
-                                                <td>Desktop</td>
-                                                <td>16 nov 2022, 12:44:25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.4.21</td>
-                                                <td>Rusia</td>
-                                                <td>Windows OS</td>
-                                                <td>Desktop</td>
-                                                <td>16 nov 2022, 12:44:25</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- END: Actividad de acceso -->
-                        </div>
+
+                        
+
+
+                        
+
+
+
+                        <div id="pai-spa-container"></div>
+
+
+
+
+
+                        
                     </div>
                     <div class="col-span-12 2xl:col-span-3">
                         <div class="2xl:border-l -mb-10 pb-10">
@@ -518,7 +505,7 @@
 
                                     <!-- BEGIN: Tasas -->
                                     <div class="mt-5">
-                                        <a href="vender.html">
+                                        <a href="#vender">
                                             <div class="intro-x">
                                                 <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
                                                     <div class="ml-4 mr-auto">
@@ -643,12 +630,31 @@
                 </div>
             </div>
             <!-- END: Content -->
+
         </div>
+
+
         
+
+        <!-- <div class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box dark:bg-dark-2 border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-gray-700 dark:text-gray-300">Modo oscuro</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div> -->
+  
         <!-- BEGIN: JS Assets-->
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script> -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script> -->
         <script src="dist/js/app.js"></script>
+        <!-- Development version -->
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+        <!-- Production version -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+                        
+        <script src="src/js/pai-router-handler.js"></script>
+        <script src="src/js/router.js"></script>
+        <script defer src="src/js/jquery.js"></script>
         <!-- END: JS Assets-->
+
     </body>
 </html>

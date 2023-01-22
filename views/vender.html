@@ -1,0 +1,290 @@
+<div class="">
+                            
+    <!-- BEGIN: General Report -->
+    <div class="col-span-12 xl:col-span-9 mt-8">
+        <div class="intro-y flex items-center h-10">
+            <h2 class="text-lg font-medium truncate mr-5">
+                Vender activos
+            </h2>
+        </div>
+        <div class="report-box-2 intro-y mt-5">
+            <div class="box grid grid-cols-12">
+                <div class="col-span-12 lg:col-span-4 px-8 py-12 flex flex-col justify-center">
+                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                        <a href="cartera.html">
+                            <div class="report-box zoom-in">
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <i data-lucide="bitcoin" class="report-box__icon text-primary"></i> 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-success tooltip cursor-pointer" title="Conteo"> 3 en total </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">4.710</div>
+                                    <div class="text-base text-slate-500 mt-1">Balance de cuenta</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-12">
+                        <button class="btn btn-primary mr-1 mb-2" data-tw-toggle="modal" data-tw-target="#basic-modal-preview" style="width:100%; display:flex; justify-content: space-between;">Agregar cuenta bancaria  <span>  </span>  <i data-lucide="landmark" class="w-5 h-5"></i> </button>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-8 p-8 border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-darkmode-300 border-dashed">
+                    <div class="mt-3"> 
+                        <label for="regular-form-2" class="form-label">Seleccionar cuenta bancaria</label> 
+                        <select class="form-select mt-2 sm:mr-2" aria-label="Cuenta bancaria">
+                            <option><b>Banco Popular</b> 73999123</option>
+                            <option><b>Banco Santa Cruz</b> 110000033445</option>
+                            <option><b>Banreservas</b> 934411</option>
+                        </select>
+                    </div> 
+                    <br><br>
+                    <div class="grid grid-cols-3 gap-2"> 
+                        <div>
+                            <label for="regular-form-2" class="form-label">Valor de la venta</label>
+                            <input type="text" class="form-control col-span-4" placeholder="Monto a vender" aria-label="Monto a vender"> 
+                        </div>
+                        <div>
+                            <label for="regular-form-2" class="form-label">Minimo de venta</label>
+                            <div class="input-group">
+                                <div id="input-group-email" class="input-group-text">USD</div> <input type="text" value="30" class="form-control" placeholder="Venta minima" aria-label="Venta minima" aria-describedby="input-group-email" disabled>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="regular-form-2" class="form-label">Maximo de venta</label>
+                            <div class="input-group">
+                                <div id="input-group-email" class="input-group-text">USD</div> <input type="text" value="14000" class="form-control" placeholder="Venta minima" aria-label="Venta minima" aria-describedby="input-group-email" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="overflow-x-auto">
+                            <table class="table table-shadow mt-5">
+                                <thead>
+                                    <tr>
+                                        <th class="whitespace-nowrap">Descripcion</th>
+                                        <th class="whitespace-nowrap">Detalle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tasa (precio variable)</td>
+                                        <td>52 DOP x USD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entrega</td>
+                                        <td class="text-danger">Entre 9:00 AM y 4:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total a recibir</td>
+                                        <td>7,334.00 DOP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="mt-12">
+                            <button class="btn btn-primary mr-1 mb-2" data-tw-toggle="modal" data-tw-target="#basic-modal-preview" style="width:100%;">vender</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: General Report -->
+    
+    <!--
+        -
+        - @VENTANA MODAL PARA AGREGAR CUENTA 
+        - @VENTANA MODAL CRUD (CREAR REGISTRO DE CUENTA, BORRAR CUENTA, ETC...)
+        -
+    -->
+    <!-- BEGIN: Modal Content --> 
+    <div id="basic-modal-preview" class="modal" tabindex="-1" aria-hidden="true"> 
+        <div class="modal-dialog"> 
+            <div class="modal-content"> 
+                <div class="modal-body p-10">
+                    <form action="" class="validate-form">
+                        <!-- BEGIN: Validation Form --> 
+                        <div class="input-form"> 
+                            <label for="validation-form-1" class="form-label w-full flex flex-col sm:flex-row"> Seleccionar pais <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">El pais de tu banco</span> </label> 
+                            <select class="form-select mt-2 sm:mr-2" id="validation-form-1" aria-label="Default select example">
+                                <option>Republica Dominicana</option>
+                            </select>
+                        </div> 
+                        <div class="input-form mt-3"> 
+                            <label for="validation-form-2" class="form-label w-full flex flex-col sm:flex-row"> Entidad bancaria <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Cual es tu banco?</span> </label> 
+                            <select class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                                <option>Banreservas</option>
+                            </select> 
+                        </div> 
+                        <div class="input-form mt-3"> 
+                            <label for="validation-form-3" class="form-label w-full flex flex-col sm:flex-row"> Tipo de cuenta <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Verificar antes de enviar</span> </label> 
+                            <select class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                                <option>Ahorros</option>
+                                <option>Corriente</option>
+                            </select>
+                        </div> 
+                        <div class="input-form mt-3"> 
+                            <label for="validation-form-3" class="form-label w-full flex flex-col sm:flex-row"> Moneda <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Verificar antes de enviar</span> </label> 
+                            <select class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                                <option>DOP</option>
+                            </select>
+                        </div> 
+                        <div class="input-form mt-3"> 
+                            <label for="validation-form-4" class="form-label w-full flex flex-col sm:flex-row"> Numero de cuenta <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Verificar antes de enviar</span> </label> 
+                            <input id="validation-form-4" type="number" name="age" class="form-control" placeholder="21" required> 
+                        </div> 
+                        <div class="input-form mt-3"> 
+                            <button type="submit" class="btn btn-primary mt-5">Procesar</button> 
+                        </div>
+                        </form> 
+                        <!-- END: Validation Form --> 
+
+                        <!-- BEGIN: Success Notification Content --> 
+                        <div id="success-notification-content" class="toastify-content hidden flex" > 
+                            <i class="text-success" data-lucide="check-circle"></i> 
+                            <div class="ml-4 mr-4"> 
+                                <div class="font-medium">
+                                    Registration success!
+                                </div> 
+                                <div class="text-slate-500 mt-1"> 
+                                    Please check your e-mail for further info! 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <!-- END: Success Notification Content --> 
+                    
+                        <!-- BEGIN: Failed Notification Content --> 
+                        <div id="failed-notification-content" class="toastify-content hidden flex" > 
+                            <i class="text-danger" data-lucide="x-circle"></i> 
+                            <div class="ml-4 mr-4"> 
+                                <div class="font-medium">
+                                    Registration failed!
+                                </div> 
+                                <div class="text-slate-500 mt-1"> 
+                                    Please check the fileld form. 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <!-- END: Failed Notification Content --> 
+                    </form>
+                    <br><br>
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th class="whitespace-nowrap">Banco</th>
+                                    <th class="whitespace-nowrap">Cuenta</th>
+                                    <th class="whitespace-nowrap">Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Banreservas</td>
+                                    <td>993584</td>
+                                    <td class="grid grid-cols-2 gap-5">
+                                        <i data-lucide="edit" class="w-4 h-4"></i>
+                                        <i data-lucide="trash" class="w-4 h-4"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Banco Santa Cruz</td>
+                                    <td>110000044233</td>
+                                    <td class="grid grid-cols-2 gap-5">
+                                        <i data-lucide="edit" class="w-4 h-4"></i>
+                                        <i data-lucide="trash" class="w-4 h-4"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Banco Popular</td>
+                                    <td>774448833</td>
+                                    <td class="grid grid-cols-2 gap-5">
+                                        <i data-lucide="edit" class="w-4 h-4"></i>
+                                        <i data-lucide="trash" class="w-4 h-4"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div> 
+    <!-- END: Modal Content --> 
+
+</div>
+<!-- END:  -->
+
+<!-- BEGIN: Transactions -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 row-start-4 lg:row-start-3 xl:row-start-auto mt-6 xl:mt-8" >
+    <div class="intro-x flex items-center h-10">
+        <h2 class="text-lg font-medium truncate mr-5">
+            Historial de ventas
+        </h2>
+    </div>
+    <div class="mt-5">
+        <div class="intro-x">
+            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                    <img alt="Midone - HTML Admin Template" src="dist/images/profile-12.jpg">
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium">Banco Popular</div>
+                    <div class="text-slate-500 text-xs mt-0.5">775558844</div>
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium text-success">7,588 DOP</div>
+                    <div class="text-slate-500 text-xs mt-0.5">05 oct, 9:44 AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-x">
+            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                    <img alt="Midone - HTML Admin Template" src="dist/images/profile-12.jpg">
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium">Banco Popular</div>
+                    <div class="text-slate-500 text-xs mt-0.5">775558844</div>
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium text-danger">7,588 DOP</div>
+                    <div class="text-slate-500 text-xs mt-0.5">05 oct, 9:44 AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-x">
+            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                    <img alt="Midone - HTML Admin Template" src="dist/images/profile-12.jpg">
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium">Banco Popular</div>
+                    <div class="text-slate-500 text-xs mt-0.5">775558844</div>
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium text-success">7,588 DOP</div>
+                    <div class="text-slate-500 text-xs mt-0.5">05 oct, 9:44 AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-x">
+            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                    <img alt="Midone - HTML Admin Template" src="dist/images/profile-12.jpg">
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium">Banco Popular</div>
+                    <div class="text-slate-500 text-xs mt-0.5">775558844</div>
+                </div>
+                <div class="ml-4 mr-auto">
+                    <div class="font-medium text-danger">7,588 DOP</div>
+                    <div class="text-slate-500 text-xs mt-0.5">05 oct, 9:44 AM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END: Transactions -->
+</div>
