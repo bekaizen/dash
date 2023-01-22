@@ -1,4 +1,5 @@
-(function () {
+(function (e) {
+    e.preventDefault();
     "use strict";
 
     // Dark mode switcher
